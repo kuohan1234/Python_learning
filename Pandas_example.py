@@ -18,6 +18,14 @@ print(df.info())
 print(df.groupby("姓名").sum())
 print(df.groupby("姓名").median())
 
+K = df.groupby("姓名").mean()
+print("\n每個人的平均分數：")
+test = "Hello World"
+print(f"KH format print : {test}")
+
+
+
+
 
 
 
