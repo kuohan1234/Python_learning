@@ -23,6 +23,8 @@ print("\n每個人的平均分數：")
 test = "Hello World"
 print(f"KH format print : {test}")
 
+test2 = "KH dont care about"
+
 
 
 
