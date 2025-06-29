@@ -25,6 +25,8 @@ print(f"KH format print : {test}")
 
 test2 = "KH dont care about"
 
+print(f"KH dont care about {test2}")
+
 
 
 
