@@ -1,49 +1,33 @@
 import pandas as pd 
 
-    # Create a DataFrame from a dictionary
+# --- DataFrame Creation and Basic Operations ---
+
+# Create a DataFrame from a dictionary
 df = pd.DataFrame({"A": [1, 2, 3], "B": [4, 5, 6]})
+print("Original DataFrame:")
+print(df)
 
-    # Calculate the sum of each column 
+# Calculate the sum of each column
 column_sums = df.sum()
-
-print (df)
-print ("KH dont care about")
-################################################################
-    
+print("\nSum of each column:")
 print(column_sums)
 
-print ("test exam")
+# --- DataFrame Slicing ---
 
-print ("more test")
-
-print (r"KH dont care about")
-
-
-print(df.iloc[[0,1]])  # Accessing all rows in column 'A'
+# Access specific rows by their integer location using iloc
+# This selects the rows at index 0 and 1
+print("\nSlicing rows at index 0 and 1:")
+print(df.iloc[[0, 1]])
 
 
+# --- Series Creation ---
+
+# Create a Series from a dictionary
 recipe = {
   "Flour": True,
   "Sugar": True,
   "Salt": False
 }
 series_dict = pd.Series(recipe)
-
-series_dict = pd.Series()
-
-print (series_dict)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("\nSeries created from a dictionary:")
+print(series_dict)
