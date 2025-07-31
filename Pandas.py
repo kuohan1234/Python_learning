@@ -1,4 +1,6 @@
 import pandas as pd 
+import numpy as np
+import time
 
 # --- DataFrame Creation and Basic Operations ---
 
@@ -18,7 +20,7 @@ print(column_sums)
 # This selects the rows at index 0 and 1
 print("\nSlicing rows at index 0 and 1:")
 print(df.iloc[[0, 1]])
-
+time.sleep(5)  # import time
 
 # --- Series Creation ---
 
@@ -31,3 +33,4 @@ recipe = {
 series_dict = pd.Series(recipe)
 print("\nSeries created from a dictionary:")
 print(series_dict)
+
