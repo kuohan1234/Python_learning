@@ -34,3 +34,18 @@ series_dict = pd.Series(recipe)
 print("\nSeries created from a dictionary:")
 print(series_dict)
 
+
+# can you give me a code to print the DataFrame and Series in a formatted way?
+def print_formatted(df, series):
+    print("Formatted DataFrame:")
+    with pd.option_context('display.float_format', '{:.2f}'.format):
+        print(df)
+    print("\nFormatted Series:")
+    print(series)
+
+print_formatted(df, series_dict)
+
+# 我想 看看 格式化輸出 可以給我一個例子嗎?
+# Example of formatted output
+print("\nExample of formatted output:")
+print_formatted(df, series_dict) 
